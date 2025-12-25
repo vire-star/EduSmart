@@ -27,6 +27,7 @@ export const useGetQuiz = (id)=>{
 export const useCheckQuiz =(id)=>{
     return useQuery({
         queryFn:()=>checkQuizApi(id),
-        queryKey:['checkQuiz', id]
+        queryKey:['checkQuiz', id],
+        enabled:!!id
     })
 }

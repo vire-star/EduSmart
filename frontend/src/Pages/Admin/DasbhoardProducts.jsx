@@ -49,7 +49,7 @@ const DashboardProducts = () => {
         <Dialog open={openModule} onOpenChange={setOpenModule}>
           <DialogTrigger
             disabled={isPending}
-            className="px-5 py-2 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 transition"
+            className="px-5 py-2 bg-emerald-600 text-white rounded-lg font-medium hover:bg-emerald-700 transition"
           >
             + Add Course
           </DialogTrigger>
@@ -65,21 +65,21 @@ const DashboardProducts = () => {
                   <input
                     {...register("title")}
                     placeholder="Course Title"
-                    className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                    className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
                   />
 
                   <textarea
                     {...register("description")}
                     placeholder="Course Description"
                     rows={3}
-                    className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                    className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
                   />
 
                   <input
                     type="number"
                     {...register("amount")}
                     placeholder="Price"
-                    className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                    className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
                   />
 
                   <input
@@ -92,7 +92,7 @@ const DashboardProducts = () => {
                   <button
                     disabled={isPending}
                     type="submit"
-                    className="w-full py-3 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition"
+                    className="w-full py-3 bg-emerald-600 flex items-center justify-center text-white rounded-lg font-semibold hover:bg-emerald-700 transition"
                   >
                     {isPending ? <Spinner /> : "Create Course"}
                   </button>
@@ -127,7 +127,7 @@ const DashboardProducts = () => {
                 {item.description}
               </p>
 
-              <div className="mt-3 font-bold text-green-600">
+              <div className="mt-3 font-bold text-emerald-600">
                 ₹ {item.amount}
               </div>
             </div>

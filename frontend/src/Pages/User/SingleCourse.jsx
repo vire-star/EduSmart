@@ -54,7 +54,7 @@ const SingleCourse = () => {
             </p>
 
             <div className="flex items-center gap-4 mb-8">
-              <span className="text-3xl font-bold text-green-600">
+              <span className="text-3xl font-bold text-emerald-600">
                 ₹{data?.amount}
               </span>
               <span className="text-sm text-gray-400 line-through">
@@ -67,8 +67,8 @@ const SingleCourse = () => {
           <button
             disabled={isPending}
             onClick={() => purchaseHandler(data)}
-            className="w-full py-4 rounded-xl bg-green-600 text-white font-semibold text-lg
-            hover:bg-green-700 transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+            className="w-full py-4 rounded-xl bg-emerald-600 text-white font-semibold text-lg
+            hover:bg-emerald-700 transition-all disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center"
           >
             {isPending ? <Spinner /> : 'Buy Now'}
           </button>

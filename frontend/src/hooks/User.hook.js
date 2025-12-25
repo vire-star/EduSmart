@@ -38,7 +38,8 @@ export const useLoginHook = ()=>{
 export const useGetUserHook = ()=>{
     return useQuery({
         queryFn:getUser,
-        queryKey:['getUser']
+        queryKey:['getUser'],
+        retry:false
     })
 }
 

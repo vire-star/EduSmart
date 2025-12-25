@@ -16,8 +16,8 @@ const DashboardAnalytics = () => {
   const { startDate, endDate } = useMemo(() => {
     const end = new Date()
     const start = new Date()
-    start.setDate(end.getDate() - 6)
-
+    start.setDate(end.getDate() - 6); // last 7 days
+    end.setDate(end.getDate()+2)
     const toStr = (d) => d.toISOString().split('T')[0]
 
     return {

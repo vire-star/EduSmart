@@ -9,7 +9,7 @@ export const usePayment = ()=>{
             if(data.url){
                 window.location.href=data.url
             }
-            toast.success(data.message)
+            // toast.success(data.message)
         },
         onError:(err)=>{
             console.log(err)

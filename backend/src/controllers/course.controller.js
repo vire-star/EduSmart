@@ -65,7 +65,7 @@ export const getCourse = async(req, res)=>{
 
         const prompt =`You are an intelligent assistant for a learning managemenge platform System . A user is searching for courses. analyze the query and return the most relevant keyword from these categories
         
-        -Artifical Intelligence,
+        -Artificial intelligence,
         -MERN Stack,
         -DevOps,
         -Mobile Development
